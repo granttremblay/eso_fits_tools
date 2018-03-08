@@ -1,4 +1,4 @@
-### A liferaft for ESO's old-school FITS tools
+### A life raft for ESO's old-school FITS tools
 
 I fear change, and these are no longer available on ESO's website. I therefore am preserving them here. 
 
