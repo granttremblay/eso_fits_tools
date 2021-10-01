@@ -9,7 +9,12 @@ The twins of FITS header display, dfits and fitsort are very handy to get an ove
 To compile: 
 
 `gcc -o dfits dfits.c`
+
 `gcc -o fitsort fitsort.c`
+
+or 
+
+`make; make install`
 
 Example usage: 
 
