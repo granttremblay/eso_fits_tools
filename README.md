@@ -2,11 +2,15 @@
 
 I fear change, and these are no longer available on ESO's website. I therefore am preserving them here. 
 
-The twins of FITS header display, dfits and fitsort are very handy to get an overview of what is contained in large amounts of FITS files. dfits dumps FITS headers to its stdout, nothing more. The good side is that it accepts jokers on the command-line, allowing constructs such as: 
+`dfits` and `fitsort` --- both beautifully written by Nicolas Devillard at ESO --- dump and filter FITS header contents on the command line. They accept all the usual `*nix` shell stuff, allowing constructs such as: 
 
 `dfits *.fits | grep OBJECT`
 
-To compile: 
+`dfits *.fits* | fitsort DPR.CATG PRO.CATG EXPTIME IMAGETYP`
+
+`dfits *.fits* | fitsort DPR.CATG EXPTIME IMAGETYP | grep SCIENCE`
+
+#### To compile: 
 
 `gcc -o dfits dfits.c`
 
@@ -14,11 +18,8 @@ To compile:
 
 or 
 
-`make; make install`
+`make; make install` (thanks to Gabe Brammer for this makefile)
 
-Example usage: 
 
-`dfits *.fits* | fitsort DPR.CATG PRO.CATG EXPTIME IMAGETYP`
 
-`dfits *.fits* | fitsort DPR.CATG EXPTIME IMAGETYP | grep SCIENCE`
 
