@@ -1,6 +1,6 @@
 
 /*---------------------------------------------------------------------------
-   
+
    File name    :   dfits.c
    Author       :   Nicolas Devillard
    Created on   :   30 Mar 2000
@@ -172,7 +172,8 @@ int dump_fits_filter(FILE * in, int xtnum)
 			printf("%s\n", rstrip(buf));
 			if (buf[0]=='E' &&
 				buf[1]=='N' &&
-				buf[2]=='D') {
+				buf[2]=='D' &&
+				(buf[3] == '\0' || buf[3] == ' ')) {
 				break ;
 			}
 		}
@@ -209,7 +210,8 @@ int dump_fits_filter(FILE * in, int xtnum)
 				printf("%s\n", rstrip(buf));
 				if (buf[0]=='E' &&
 					buf[1]=='N' &&
-					buf[2]=='D') break ;
+					buf[2]=='D' &&
+					(buf[3] == '\0' || buf[3] == ' ')) break ;
 			}
 		}
 		if (n_xt==xtnum)
