@@ -172,7 +172,8 @@ int dump_fits_filter(FILE * in, int xtnum)
 			printf("%s\n", rstrip(buf));
 			if (buf[0]=='E' &&
 				buf[1]=='N' &&
-				buf[2]=='D') {
+				buf[2]=='D' &&
+                                buf[8]!='=') {
 				break ;
 			}
 		}
