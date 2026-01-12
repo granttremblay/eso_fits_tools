@@ -1,6 +1,6 @@
 ### Update 2026
 
-I see just now that Nicolas Devillard actually keeps the full eclipse library up on github here. Thanks Nicolas! https://github.com/ndevilla/eclipse
+I see just now that Nicolas Devillard actually keeps the full eclipse library up on github here. Thanks Nicolas! https://github.com/ndevilla/eclipse. Also, Romain Thomas maintains a python version of these tools here:  https://github.com/Romain-Thomas-Shef/dfitspy (thanks Romain!)
 
 
 ### A life raft for ESO's old-school FITS tools
