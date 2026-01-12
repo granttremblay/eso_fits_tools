@@ -1,3 +1,8 @@
+### Update 2026
+
+I see just now that Nicolas Devillard actually keeps the full eclipse library up on github here. Thanks Nicolas! https://github.com/ndevilla/eclipse
+
+
 ### A life raft for ESO's old-school FITS tools
 
 I fear change, and these are no longer available on ESO's website. I therefore am preserving them here. 
